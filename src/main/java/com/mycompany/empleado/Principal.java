@@ -18,17 +18,18 @@ public class Principal {
         System.out.print("Favor ingresar el salario del empleado: ");
         double salario = sc.nextDouble();
         sc.nextLine();  
-        System.out.print("Favor ingresar el género del empleado: ");
+        System.out.print("Favor ingresar el genero del empleado: ");
         String genero = sc.nextLine();
         System.out.print("Favr ingresar la edad del empleado: ");
         int edad = sc.nextInt();
 
         Bonificacion empleado = new Bonificacion(nombre, salario, genero, edad, 0);
-        System.out.println("Salario final con bonificación: " + empleado.SalarioFinal());
+        System.out.println("Salario final con bonificacion: " + empleado.SalarioFinal());
 
         
         //Libro  
-        System.out.print("Favor ingrese el titulo del: ");
+        sc.nextLine();
+        System.out.print("Favor ingrese el titulo del libro: ");
         String titulo = sc.nextLine();
         System.out.print("Favor ingresar el autor: ");
         String autor = sc.nextLine();
@@ -36,7 +37,7 @@ public class Principal {
         String isbn = sc.nextLine();
         System.out.print("Favor ingresar el precio del libro: ");
         double precio = sc.nextDouble();
-        System.out.print("¿El comprador es mayor de edad? (true/false): ");
+        System.out.print("El comprador es mayor de edad? true o false : ");
         boolean mayorDeEdad = sc.nextBoolean();
 
         Libro libro = new Libro(titulo, autor, isbn, precio);
