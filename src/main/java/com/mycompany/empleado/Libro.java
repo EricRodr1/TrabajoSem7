@@ -22,7 +22,7 @@ public class Libro {
     }
 
     public void Detalles() {
-        System.out.println("Título: " + titulo);
+        System.out.println("Titulo: " + titulo);
         System.out.println("Autor: " + autor);
         System.out.println("ISBN: " + isbn);
         System.out.println("Precio: " + precio);
